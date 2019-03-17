@@ -13,6 +13,7 @@ class GameViewController : UIViewController {
     var currentValue : Int = 50
     var targetValue : Int = 0
     @IBOutlet weak var lbl_targetValue: UILabel!
+    @IBOutlet weak var slider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +26,16 @@ class GameViewController : UIViewController {
         
         let alert = UIAlertController(title: "Result", message: "You select the number: \(currentValue)", preferredStyle: .alert)
         
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler:
+        {(action : UIAlertAction) in
+            self.generateRandomValue()
+            self.slider.value = 50
+        })
         
         alert.addAction(okAction)
         
         present(alert, animated: true)
         
-        generateRandomValue()
     }
     
     @IBAction func sliderMoved(_ sender: UISlider) {
