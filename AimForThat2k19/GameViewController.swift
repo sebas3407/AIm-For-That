@@ -26,16 +26,12 @@ class GameViewController : UIViewController {
         
         let alert = UIAlertController(title: "Result", message: "You select the number: \(currentValue)", preferredStyle: .alert)
         
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler:
-        {(action : UIAlertAction) in
-            self.generateRandomValue()
-            self.slider.value = 50
-        })
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler:vnil)
         
         alert.addAction(okAction)
-        
         present(alert, animated: true)
         
+        generateRandomValue()
     }
     
     @IBAction func sliderMoved(_ sender: UISlider) {
@@ -44,6 +40,7 @@ class GameViewController : UIViewController {
     }
     
     func generateRandomValue() {
+        self.slider.value = 50
         targetValue = Int.random(in: 1...100)
         lbl_targetValue.text = String(targetValue)
     }
