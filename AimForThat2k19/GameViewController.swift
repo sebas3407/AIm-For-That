@@ -24,7 +24,11 @@ class GameViewController : UIViewController {
 
     @IBAction func showAlert(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Result", message: "You select the number: \(currentValue)", preferredStyle: .alert)
+        let difference : Int = abs(currentValue - targetValue)
+        
+        let points = (difference > 0) ? 100 - difference : 500
+        
+        let alert = UIAlertController(title: "Result", message: "You select the number: \(currentValue), your hit \(points) points", preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         
