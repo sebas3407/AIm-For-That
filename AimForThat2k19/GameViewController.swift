@@ -26,7 +26,7 @@ class GameViewController : UIViewController {
         
         let alert = UIAlertController(title: "Result", message: "You select the number: \(currentValue)", preferredStyle: .alert)
         
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler:vnil)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         
         alert.addAction(okAction)
         present(alert, animated: true)
