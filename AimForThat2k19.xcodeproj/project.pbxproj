@@ -12,6 +12,8 @@
 		AA0E644E22355B5300F81A8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0E644C22355B5300F81A8B /* Main.storyboard */; };
 		AA0E645022355B5500F81A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0E644F22355B5500F81A8B /* Assets.xcassets */; };
 		AA0E645322355B5500F81A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0E645122355B5500F81A8B /* LaunchScreen.storyboard */; };
+		AA4D4B842241403E0048F1FD /* SliderTrackRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4D4B822241403D0048F1FD /* SliderTrackRight@2x.png */; };
+		AA4D4B852241403E0048F1FD /* SliderTrackLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4D4B832241403E0048F1FD /* SliderTrackLeft@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		AA0E644F22355B5500F81A8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA0E645222355B5500F81A8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA0E645422355B5500F81A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA4D4B822241403D0048F1FD /* SliderTrackRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SliderTrackRight@2x.png"; sourceTree = "<group>"; };
+		AA4D4B832241403E0048F1FD /* SliderTrackLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SliderTrackLeft@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				AA0E644F22355B5500F81A8B /* Assets.xcassets */,
 				AA0E645122355B5500F81A8B /* LaunchScreen.storyboard */,
 				AA0E645422355B5500F81A8B /* Info.plist */,
+				AA4D4B832241403E0048F1FD /* SliderTrackLeft@2x.png */,
+				AA4D4B822241403D0048F1FD /* SliderTrackRight@2x.png */,
 			);
 			path = AimForThat2k19;
 			sourceTree = "<group>";
@@ -123,7 +129,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA0E645322355B5500F81A8B /* LaunchScreen.storyboard in Resources */,
+				AA4D4B852241403E0048F1FD /* SliderTrackLeft@2x.png in Resources */,
 				AA0E645022355B5500F81A8B /* Assets.xcassets in Resources */,
+				AA4D4B842241403E0048F1FD /* SliderTrackRight@2x.png in Resources */,
 				AA0E644E22355B5300F81A8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

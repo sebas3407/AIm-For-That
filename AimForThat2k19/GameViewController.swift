@@ -34,17 +34,31 @@ class GameViewController : UIViewController {
         let points = (difference > 0) ? 100 - difference : 500
         
         score += points
-        lbl_score.text = String(score)
 
+        var tittle : String = ""
         
-        let alert = UIAlertController(title: "Result", message: "You select the number: \(currentValue), your hit \(points) points", preferredStyle: .alert)
+        switch difference {
+        case 0:
+            title = "Perfect score"
+        case 1...5:
+            tittle = "Almost perfect"
+        case 6...22:
+            tittle = "A bit far"
+        default:
+            tittle = "Too far away"
+        }
         
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        let alert = UIAlertController(title: tittle, message: "You select the number: \(currentValue), your hit \(points) points", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler:
+        {action in
+            self.updateStatistiscs()
+            self.startNewRound()
+        })
         
         alert.addAction(okAction)
         present(alert, animated: true)
         
-        startNewRound()
     }
     
     @IBAction func sliderMoved(_ sender: UISlider) {
@@ -52,12 +66,22 @@ class GameViewController : UIViewController {
         currentValue = lroundf(sender.value)
     }
     
-    func startNewRound() {
+    func updateStatistiscs() {
+        lbl_score.text = String(score)
         round+=1
         lbl_round.text = String(round)
-        
+    }
+    
+    func startNewRound() {
         self.slider.value = 50
         targetValue = Int.random(in: 1...100)
         lbl_targetValue.text = String(targetValue)
+    }
+    
+    @IBAction func startNewGame() {
+        score = 0
+        round = 0
+        updateStatistiscs()
+        startNewRound()
     }
 }
