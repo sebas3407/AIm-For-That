@@ -23,6 +23,7 @@ class GameViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupSlider()
         startNewRound()
     }
 
@@ -83,5 +84,23 @@ class GameViewController : UIViewController {
         round = 0
         updateStatistiscs()
         startNewRound()
+    }
+    
+    func setupSlider(){
+        let thumbNormalImage = UIImage(named: "SliderThumb-Normal")
+        let thumbHiglightedImage = UIImage(named: "SliderThumb-Highlighted")
+        let trackLeftImage = UIImage(named: "SliderTrackLeft")
+        let trackRightImage = UIImage(named: "SliderTrackRight")
+    
+        self.slider.setThumbImage(thumbNormalImage, for: .normal)
+        self.slider.setThumbImage(thumbHiglightedImage, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        let trackLeftResizable = trackLeftImage?.resizableImage(withCapInsets: insets)
+        let trackRightResizable = trackRightImage?.resizableImage(withCapInsets: insets)
+        
+        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
+        slider.setMaximumTrackImage(trackRightResizable, for: .normal)
+
     }
 }
