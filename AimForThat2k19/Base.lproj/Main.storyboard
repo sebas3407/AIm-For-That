@@ -17,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="cvp-kj-TwE">
+                                <rect key="frame" x="-1" y="0.0" width="898" height="414"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7v-hh-JPp">
                                 <rect key="frame" x="405" y="244" width="91" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -105,12 +108,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="cvp-kj-TwE">
-                                <rect key="frame" x="-16" y="0.0" width="924" height="414"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="cvp-kj-TwE" secondAttribute="leading" constant="65" id="7Fg-GS-Zxo"/>
+                            <constraint firstAttribute="bottom" secondItem="cvp-kj-TwE" secondAttribute="bottom" id="9JA-8M-9J3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cvp-kj-TwE" secondAttribute="trailing" constant="-65" id="TJm-vw-KUJ"/>
+                            <constraint firstItem="cvp-kj-TwE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="TtO-e7-pwE"/>
+                            <constraint firstItem="cvp-kj-TwE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dJ1-4N-RH3"/>
+                            <constraint firstItem="cvp-kj-TwE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wFL-x5-0VA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -138,7 +145,7 @@
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKp-HU-F5F">
-                                <rect key="frame" x="41" y="374" width="52" height="32"/>
+                                <rect key="frame" x="422" y="361" width="52" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Button"/>
