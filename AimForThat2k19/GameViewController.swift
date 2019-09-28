@@ -23,7 +23,7 @@ class GameViewController : UIViewController {
     @IBOutlet weak var lbl_round: UILabel!
     @IBOutlet weak var lbl_score: UILabel!
     @IBOutlet weak var lbl_time: UILabel!
-    
+    @IBOutlet weak var lbl_maxScore: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,6 +96,17 @@ class GameViewController : UIViewController {
     }
     
     @IBAction func startNewGame() {
+        
+        let maxScore = UserDefaults.standard.integer(forKey: "maxScore")
+        
+        if(score > maxScore){
+            UserDefaults.standard.set(score, forKey: "maxScore")
+            lbl_maxScore.text = String(score)
+        }
+        else{
+            lbl_maxScore.text = String(maxScore)
+        }
+        
         score = 0
         round = 0
         time = 60
@@ -115,6 +126,11 @@ class GameViewController : UIViewController {
         lbl_time.text = String(time)
         
         if(time == 0){
+            let maxScore = UserDefaults.standard.integer(forKey: "maxScore")
+            
+            if(score > maxScore){
+                UserDefaults.standard.set(score, forKey: "maxScore")
+            }
             startNewGame()
         }
     }
