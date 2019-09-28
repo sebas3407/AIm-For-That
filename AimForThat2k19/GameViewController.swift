@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class GameViewController : UIViewController {
     
@@ -14,17 +15,21 @@ class GameViewController : UIViewController {
     var targetValue : Int = 0
     var score : Int = 0
     var round : Int = 0
+    var time : Int = 0
+    var timer : Timer?
     
     @IBOutlet weak var lbl_targetValue: UILabel!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var lbl_round: UILabel!
     @IBOutlet weak var lbl_score: UILabel!
+    @IBOutlet weak var lbl_time: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupSlider()
-        startNewRound()
+        startNewGame()
     }
 
 
@@ -71,19 +76,47 @@ class GameViewController : UIViewController {
         lbl_score.text = String(score)
         round+=1
         lbl_round.text = String(round)
+        lbl_time.text = String(time)
     }
     
     func startNewRound() {
         self.slider.value = 50
+        time = 60
+
         targetValue = Int.random(in: 1...100)
         lbl_targetValue.text = String(targetValue)
+        
+        let transition = CATransition()
+        transition.type = CATransitionType.fade
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name:     CAMediaTimingFunctionName.easeIn)
+        
+        self.view.layer.add(transition, forKey: nil)
+        
     }
     
     @IBAction func startNewGame() {
         score = 0
         round = 0
+        time = 60
+        
+        if(timer != nil) {
+            timer?.invalidate()
+        }
+        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(tick), userInfo: nil, repeats: true)
+        
         updateStatistiscs()
         startNewRound()
+    }
+    
+    @objc func tick(){
+        time -= 1
+        lbl_time.text = String(time)
+        
+        if(time == 0){
+            startNewGame()
+        }
     }
     
     func setupSlider(){

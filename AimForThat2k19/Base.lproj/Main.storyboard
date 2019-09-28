@@ -112,6 +112,13 @@
                                 <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GG-aJ-LHA">
+                                <rect key="frame" x="417.5" y="2" width="61" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -119,8 +126,10 @@
                             <constraint firstAttribute="bottom" secondItem="cvp-kj-TwE" secondAttribute="bottom" id="9JA-8M-9J3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cvp-kj-TwE" secondAttribute="trailing" constant="-65" id="TJm-vw-KUJ"/>
                             <constraint firstItem="cvp-kj-TwE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="TtO-e7-pwE"/>
+                            <constraint firstItem="4GG-aJ-LHA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="VsX-dm-oHi"/>
                             <constraint firstItem="cvp-kj-TwE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dJ1-4N-RH3"/>
                             <constraint firstItem="cvp-kj-TwE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wFL-x5-0VA"/>
+                            <constraint firstItem="4GG-aJ-LHA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xZG-dV-dNf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -128,6 +137,7 @@
                         <outlet property="lbl_round" destination="fGx-GP-zX4" id="TnA-uP-Doc"/>
                         <outlet property="lbl_score" destination="VYp-Y3-uFZ" id="fbb-WA-nsN"/>
                         <outlet property="lbl_targetValue" destination="P6T-J9-wUR" id="ph5-Fq-2gn"/>
+                        <outlet property="lbl_time" destination="4GG-aJ-LHA" id="j1h-03-ec7"/>
                         <outlet property="slider" destination="rAc-Pw-a2Z" id="gyy-yS-Ynx"/>
                     </connections>
                 </viewController>
