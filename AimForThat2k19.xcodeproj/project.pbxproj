@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93097FD123D09D6F0088A4CE /* whitrabt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93097FD023D09D6F0088A4CE /* whitrabt.ttf */; };
 		AA0E644922355B5300F81A8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E644822355B5300F81A8B /* AppDelegate.swift */; };
 		AA0E644B22355B5300F81A8B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E644A22355B5300F81A8B /* GameViewController.swift */; };
 		AA0E644E22355B5300F81A8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0E644C22355B5300F81A8B /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93097FD023D09D6F0088A4CE /* whitrabt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitrabt.ttf; sourceTree = "<group>"; };
 		AA0E644522355B5300F81A8B /* AimForThat2k19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AimForThat2k19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0E644822355B5300F81A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA0E644A22355B5300F81A8B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93097FCF23D09D450088A4CE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				93097FD023D09D6F0088A4CE /* whitrabt.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		AA0E643C22355B5300F81A8B = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		AA0E644722355B5300F81A8B /* AimForThat2k19 */ = {
 			isa = PBXGroup;
 			children = (
+				93097FCF23D09D450088A4CE /* Fonts */,
 				AA0E644822355B5300F81A8B /* AppDelegate.swift */,
 				AA4D4B8A2242F6AB0048F1FD /* AimForThat.html */,
 				AA0E644A22355B5300F81A8B /* GameViewController.swift */,
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA4D4B8B2242F6AB0048F1FD /* AimForThat.html in Resources */,
+				93097FD123D09D6F0088A4CE /* whitrabt.ttf in Resources */,
 				AA0E645022355B5500F81A8B /* Assets.xcassets in Resources */,
 				AA0E644E22355B5300F81A8B /* Main.storyboard in Resources */,
 			);
