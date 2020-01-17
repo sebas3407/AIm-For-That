@@ -123,7 +123,7 @@ class GameViewController : UIViewController {
     
     @objc func tick(){
         time -= 1
-        lbl_time.text = String(time)
+        lbl_time.text = "\(String(time)) Seconds"
         
         if(time == 0){
             let maxScore = UserDefaults.standard.integer(forKey: "maxScore")
