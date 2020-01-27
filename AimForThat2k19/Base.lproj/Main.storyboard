@@ -175,6 +175,7 @@
                         <outlet property="lbl_round" destination="fGx-GP-zX4" id="TnA-uP-Doc"/>
                         <outlet property="lbl_score" destination="VYp-Y3-uFZ" id="fbb-WA-nsN"/>
                         <outlet property="lbl_targetValue" destination="P6T-J9-wUR" id="ph5-Fq-2gn"/>
+                        <outlet property="lbl_time" destination="g0g-ew-Svn" id="fJy-YG-dge"/>
                         <outlet property="slider" destination="rAc-Pw-a2Z" id="gyy-yS-Ynx"/>
                     </connections>
                 </viewController>
