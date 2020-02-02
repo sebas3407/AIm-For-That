@@ -91,6 +91,16 @@ class GameViewController : UIViewController {
         transition.duration = 1
         transition.timingFunction = CAMediaTimingFunction(name:     CAMediaTimingFunctionName.easeIn)
         
+        let maxScore = UserDefaults.standard.integer(forKey: "maxScore")
+
+        if(score > maxScore){
+            UserDefaults.standard.set(score, forKey: "maxScore")
+            lbl_maxScore.text = String(score)
+        }
+        else{
+            lbl_maxScore.text = String(maxScore)
+        }
+        
         self.view.layer.add(transition, forKey: nil)
         
     }
