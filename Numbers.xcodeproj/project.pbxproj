@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		93097FD023D09D6F0088A4CE /* whitrabt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whitrabt.ttf; sourceTree = "<group>"; };
-		AA0E644522355B5300F81A8B /* AimForThat2k19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AimForThat2k19.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0E644522355B5300F81A8B /* Numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Numbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0E644822355B5300F81A8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA0E644A22355B5300F81A8B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		AA0E644D22355B5300F81A8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		AA0E644622355B5300F81A8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA0E644522355B5300F81A8B /* AimForThat2k19.app */,
+				AA0E644522355B5300F81A8B /* Numbers.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,9 +81,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA0E644422355B5300F81A8B /* AimForThat2k19 */ = {
+		AA0E644422355B5300F81A8B /* Numbers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA0E645722355B5500F81A8B /* Build configuration list for PBXNativeTarget "AimForThat2k19" */;
+			buildConfigurationList = AA0E645722355B5500F81A8B /* Build configuration list for PBXNativeTarget "Numbers" */;
 			buildPhases = (
 				AA0E644122355B5300F81A8B /* Sources */,
 				AA0E644222355B5300F81A8B /* Frameworks */,
@@ -93,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = AimForThat2k19;
+			name = Numbers;
 			productName = AimForThat2k19;
-			productReference = AA0E644522355B5300F81A8B /* AimForThat2k19.app */;
+			productReference = AA0E644522355B5300F81A8B /* Numbers.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AA0E644022355B5300F81A8B /* Build configuration list for PBXProject "AimForThat2k19" */;
+			buildConfigurationList = AA0E644022355B5300F81A8B /* Build configuration list for PBXProject "Numbers" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA0E644422355B5300F81A8B /* AimForThat2k19 */,
+				AA0E644422355B5300F81A8B /* Numbers */,
 			);
 		};
 /* End PBXProject section */
@@ -297,8 +297,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianOrtiz.AimForThat2k19;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianOrtiz.Numbers;
+				PRODUCT_NAME = Numbers;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,8 +315,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianOrtiz.AimForThat2k19;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianOrtiz.Numbers;
+				PRODUCT_NAME = Numbers;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA0E644022355B5300F81A8B /* Build configuration list for PBXProject "AimForThat2k19" */ = {
+		AA0E644022355B5300F81A8B /* Build configuration list for PBXProject "Numbers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA0E645522355B5500F81A8B /* Debug */,
@@ -334,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA0E645722355B5500F81A8B /* Build configuration list for PBXNativeTarget "AimForThat2k19" */ = {
+		AA0E645722355B5500F81A8B /* Build configuration list for PBXNativeTarget "Numbers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA0E645822355B5500F81A8B /* Debug */,
