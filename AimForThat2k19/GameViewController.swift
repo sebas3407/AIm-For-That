@@ -73,9 +73,9 @@ class GameViewController : UIViewController {
     }
     
     func updateStatistiscs() {
-        lbl_score.text = String(score)
+        lbl_score.text = String("Score: \(score)")
         round+=1
-        lbl_round.text = String(round)
+        lbl_round.text = String("Round: \(round)")
         lbl_time.text = String(time)
     }
     
@@ -95,10 +95,10 @@ class GameViewController : UIViewController {
 
         if(score > maxScore){
             UserDefaults.standard.set(score, forKey: "maxScore")
-            lbl_maxScore.text = String(score)
+            lbl_maxScore.text = String("Max Score: \(score)")
         }
         else{
-            lbl_maxScore.text = String(maxScore)
+            lbl_maxScore.text = String("Max Score: \(maxScore)")
         }
         
         self.view.layer.add(transition, forKey: nil)
